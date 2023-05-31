@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_Mid2_Lab1.InfoPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="20">
+            <Label Text="Info. Page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Margin="5" Padding="5" >
+            <Label Text="Section" x:Name="Section" />
+            <Label Text="" x:Name="Show" />
+        </StackLayout>
+        <StackLayout Margin="5" Padding="5" >
+            <Entry Placeholder=" Home Number" x:Name="HomeNumber" />
+            <Entry Placeholder=" City" x:Name="City" />
+        </StackLayout>
+        <StackLayout Margin="5" Padding="5" Orientation="Horizontal">
+            <Button Text="GetAllPeopleInAddress"  Clicked="GetAllPeopleInAddress_Clicked" />
+            <Button Text="Control" x:Name="Control" />
+            
+        </StackLayout>
+        <StackLayout Margin="5" Padding="5" Orientation="Horizontal">
+            <Button Text="GetAllAddress"  Clicked="GetAllAddress_Clicked" />
+            <Button Text="GetAllPeople" Clicked="GetAllPeople_Clicked" />
+            <Button Text="Logout" x:Name="Logout" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
